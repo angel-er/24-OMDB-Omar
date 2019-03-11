@@ -1,17 +1,17 @@
 import React from 'react'
 
-export default (props) => {
-    console.log(props)
+export default props => {
+
     return (
         <div>
             <form onSubmit={props.onSubmit} >
                 <input
                     type='text'
                     name='titulo'
-                    placeholder='Busca el titulo'
+                    placeholder='Movie Name'
                     onChange={props.onChange}
                 />
-                <button type='submit' >BUSCAR!</button>
+                <button  type='submit' >Search</button>
             </form>
         </div>
     )
